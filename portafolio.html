@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -7,66 +7,145 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="portafolio.css">
-    <script src="portafolio.js"></script>
+    <script src="./portafolio.js"></script>
 </head>
 
+
 <body>
-    <!-- ---------------------------------------NAV-------------------------------------------------- -->
-    <div class="container-fluid py-3" style="background-color: rgb(0, 0, 0);">
-        <div class="row px-2">
-            <div class="col-6">
-                <img class="img-fluid" src="logo.png" alt="logo_provisorio">
+    <!-- ---NAV--- -->
+    <section class="sticky-top" id="">
+        <nav class="navbar  bg-light navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16" style="color: aliceblue;">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-black-50">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: aliceblue;">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col text-center border border-light px-2 mx-2 pt-4 text-capitalize" style="color:white;">
-                Acceder
-            </div>
-            <div class="col text-center border border-light px-2 pt-4" style="color :white;">
-                Menú
-            </div>
+        </nav>
+    </section>
+    <!-- ----PRESENTACION---- -->
+    <section class="d-flex justify-content-center px-sm-0 py-5 px-3 " id="sbody">
+        <div class="col-10 p-5 card" style="background-color: #a87bc7;">
+            <p class="display-6 texto-presentacion" id="texto-presentacion">Hola soy Esteban Montenegro intento ser
+                desarrollador
+                front-end</p>
         </div>
-    </div>
-    <!-- --------------------------------LISTA DE PRODUCTOS--------------------------------------------- -->
-    <div class="container-fluid" style=" background-color: rgb(136, 42, 42);">
-        <div class="display-2 text-center pt-4">
-            Lista de productos
+    </section>
+    <!-- ----PROYECTOS---- -->
+    <section class="d-flex justify-content-center display-2 " id="sproy">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- FALTA ACOMODAR LA FLECHITA DE LOS PROYECTOS -->
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <div id="" class="card p-5 mb-5  " style="background-color: #a87bc7;  ">
+                        Calculadora
+                        <i>
+                            <a href="https://www.youtube.com/watch?v=4Yr7Tcim9FQ&ab_channel=JustinQuiles"
+                                target="_blank" class="d-flex justify-content-center pt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="color: #000000;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>
+                            </a>
+                        </i>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="" class="card p-5 mb-5" style="background-color: #a87bc7;">
+                        Proyecto 2
+                        <i>
+                            <a href="" target="_blank" class="d-flex justify-content-center pt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="color: #000000;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>
+                            </a>
+                        </i>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="" class="card p-5 mb-5" style="background-color: #a87bc7;">
+                        Proyecto 3
+                        <i>
+                            <a href="" target="_blank" class="d-flex justify-content-center pt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="color: #000000;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>
+                            </a>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="row p-5 text-uppercase text-center">
-            <div class="col-sm pt-5" style="height: 250px; background-color: rgb(199, 194, 194);">
-                producto 1
-            </div>
-            <div class="col-md my-2 m-md-0 mx-md-2 p-5" style="height: 250px; background-color: rgb(199, 194, 194);">
-                producto 2
-            </div>
-            <div class="col-sm col-md pt-5" style="height: 250px; background-color: rgb(199, 194, 194);">
-                producto 3
-            </div>
+    </section>
+    <!-- ----CONTACTOS---- -->
+    <section class="container " id="contact">
+        <div class="p-5 ">
+            <ul class="text-center">
+                <li class="px-5 m-1 ">Facebook</li>
+                <li class="px-5 m-1">Twitter</li>
+                <li class="px-5 m-1">Github</li>
+                <li class="px-5 m-1">Instagram</li>
+                <li class="px-5 m-1">Github</li>
+                <li class="px-5 m-1">Email</li>
+            </ul>
+
         </div>
-    </div>
-    <!-- -----------------------------------CONTACTO------------------------------------------------ -->
-    <div class="container-fluid " style="background-color: rgba(136, 42, 42, 0.432);">
-        <div class="display-2 text-center pt-4">
-            Contacto
-        </div>
-        <div class="row p-4 text-uppercase text-center justify-content-center">
-            <div class="col-12 col-md-2 my-md-0" style="height: 40px; background-color: rgb(199, 194, 194);">
-                Facebook
-            </div>
-            <div class="col-12 col-md-2 my-3 my-md-0 mx-md-4"
-                style="height: 40px; background-color: rgb(199, 194, 194);">
-                Twitter
-            </div>
-            <div class="col-12 col-md-2" style="height: 40px; background-color: rgb(199, 194, 194);">
-                Telefono
-            </div>
-            <div class="col-12 col-md-2 my-3 my-md-0 mx-md-4"
-                style="height: 40px; background-color: rgb(199, 194, 194);">
-                Email
-            </div>
-            <div class="col-12 col-md-2 my-md-0" style="height: 40px; background-color: rgb(199, 194, 194);">
-                Github
-            </div>
-        </div>
-    </div>
+    </section>
     <script src="js/bootstrap.min.js"></script>
 </body>
 

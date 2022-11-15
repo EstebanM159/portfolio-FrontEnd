@@ -1,3 +1,64 @@
-.pepe {
-    background-color: blueviolet;
+body {
+    background-color: #734a91;
+    color: #000000;
+}
+
+#sbody {
+    height: 600px;
+}
+
+#sproy {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-color: #7b4688;
+}
+
+#contact {
+    height: 300px;
+    background-color: #dac9df;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    background-color: grey;
+
+}
+
+.dropdown-item {
+    color: aliceblue;
+}
+
+
+nav.navbar {
+    background: linear-gradient(180deg, #000000 0%, rgb(0, 0, 0) 98%);
+    height: 80px;
+    background-size: cover;
+    height: 100%;
+    background-position: center center;
+    color: aliceblue;
+}
+
+
+a.navbar-brand {
+    color: aliceblue;
+}
+
+.navbar-toggler:hover {
+    border: .5px solid white !important;
+    color: aliceblue;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }

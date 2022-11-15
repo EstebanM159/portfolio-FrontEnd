@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="registrarse.css">
+    <script src="./registrarse.js"></script>
+</head>
+
+<body>
+    <!-- ------------------------LOGO------------------------------------------------ -->
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('fondo.jpg');
+    background-size: cover;
+    height: 200px;">
+        <h1 class="display-2">Ingrese sus datos</h1>
+    </div>
+    <!-- --------------------------------------------------------------------------- -->
+
+    <div class=" d-flex align-items-sm-center justify-content-sm-center">
+        <form class="container px-5 col-sm-6">
+            <div class="mb-3 pt-4">
+                <label for="exampleInputPassword1" class="form-label">
+                    Nombre:
+                </label>
+                <input type="text" class="form-control " id="InputNombre">
+            </div>
+            <div class="mb-3 pt-2">
+                <label for="exampleInputPassword1" class="form-label">
+                    Apellido:
+                </label>
+                <input type="text" class="form-control" id="InputApellido">
+            </div>
+            <div class="mb-3 pt-2">
+                <label for="eInputEmail1" class="form-label">
+                    Correo electrónico:
+                </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text pt-3" style="color:black;">
+                    Nunca compartiremos su correo electrónico con nadie más.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">
+                    Contraseña:
+                </label>
+                <input type="password" class="form-control" id="InputContraseña">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">
+                    Confirmar contraseña:
+                </label>
+                <input type="password" class="form-control" id="InputContraseña">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">
+                    Acepto <a href="#">Terminos</a> y <a href="#">Condiciones</a>
+                </label>
+            </div>
+            <div class="mt-4 d-flex align-items-center justify-content-center">
+                <button type="submit" class="btn btn-primary col-4 mb-4" id="enviar">Enviar</button oneclick=mostrar>
+            </div>
+        </form>
+    </div>
+    <footer class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-color:rgba(204, 186, 186, 0.651); height:60px;">
+        Derechos reservados a la concha de tu madre
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="output/app.js"></script>
+</body>
